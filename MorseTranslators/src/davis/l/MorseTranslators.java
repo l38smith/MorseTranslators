@@ -4,7 +4,7 @@ public class MorseTranslators {
 
 	private String original;
 	private String mcode;
-	
+
 
 	
 	
@@ -37,19 +37,19 @@ public class MorseTranslators {
    
 	
        
-     char c = original.charAt(0);
-     if (Character.isLetterOrDigit(c)) {
-     System.out.printf("Language detected: English\n");
-     message = new MorseTranslators(original);
-     System.out.println( message.getMorseCode());}
+    char c = original.charAt(0);
+    if (Character.isLetterOrDigit(c)) {
+    System.out.printf("Language detected: English\n");
+    message = new MorseTranslators(original);
+    System.out.println( message.getMorseCode());}
      
 	
       
-     c = original.charAt(0);      
-     if  (!Character.isLetterOrDigit(c))   {    
-     System.out.printf("Language detected: Morse Code\n");            
-     message = new MorseTranslators(original);
-     System.out.println( message.getString (original));}	}  }
+    c = original.charAt(0);      
+    if  (!Character.isLetterOrDigit(c))   {    
+    System.out.printf("Language detected: Morse Code\n");            
+    message = new MorseTranslators(original);
+    System.out.println( message.getString (original));}	}  }
 	
     	 
    
@@ -239,7 +239,7 @@ public class MorseTranslators {
 	public String getString(String morse)
 	{
 		
-		 String str=" ";
+	   String str=" ";
 	   String args[]=morse.split(" ");
 	   for(int i=0;i<args.length;i++)
 	   {
@@ -251,10 +251,6 @@ public class MorseTranslators {
 	   
 	
 	}
-
-
-	
-
 }
 
 	
